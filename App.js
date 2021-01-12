@@ -28,6 +28,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import  SplashScreen  from './Views/splashscreen';
 import WelcomePage from './Views/welcomepage';
 import  DashboardPage  from './Views/dashboardpage';
+import ContactUsPage from './Views/contactuspage';
 
 const Stack = createStackNavigator();
 
@@ -51,28 +52,15 @@ const App = () =>{
         options={{
           headerShown : false
         }}/>
+         <Stack.Screen name="contactuspage"
+        component={ContactUsPage}
+        options={{
+        }}/>
       </Stack.Navigator>
     </NavigationContainer>
   ); 
 }  
   
-const styles = StyleSheet.create({  
-  MainContainer: {  
-    position: 'absolute',  
-    top: 0,  
-    left: 0,  
-    right: 0,  
-    bottom: 0,  
-    alignItems: 'center',  
-    justifyContent: 'flex-end',  
-  },  
-  mapStyle: {  
-    position: 'absolute',  
-    top: 0,  
-    left: 0,  
-    right: 0,  
-    bottom: 0,  
-  },  
-});  
+ 
 
 export default App;

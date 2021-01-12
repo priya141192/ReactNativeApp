@@ -3,6 +3,10 @@ import { AppRegistry, View, TextInput, SafeAreaView,StyleSheet,Image,Text,Toucha
 
 const DashboardPage = ({navigation}) => 
 {
+    const handleContactus = (() => {
+        navigation.navigate('contactuspage');
+    });
+
     return(
         <SafeAreaView>
             <View style = {{height : '35%'}}>
@@ -66,12 +70,12 @@ const DashboardPage = ({navigation}) =>
 
             <TouchableOpacity
                 activeOpacity={0.8}
-                style={styles.appButtonContainer}>
+                style={styles.appButtonContainer} onPress = {handleContactus}>
                 <Text style={{alignSelf:'center', alignItems :'center',
                     justifyContent:'center',
                     color:'#e91b1a',
                     fontWeight : 'bold',
-                    fontSize: 15}}>About Us</Text>
+                    fontSize: 15}}>Contact Us</Text>
             </TouchableOpacity>
 
             <TouchableOpacity
