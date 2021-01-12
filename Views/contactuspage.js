@@ -24,13 +24,13 @@ const ContactUsPage = () =>
             return;
         }
         
-        Alert.alert("Success","Thankyou for Contacting.",[{
-            text : 'Ok',
+        Alert.alert("Success","Thank you for Contacting us.",[{
+            text : 'Ok'
         }])
     };
 
     return(
-        <SafeAreaView style = {{}}>
+        <SafeAreaView>
             <MapView
             style = {{height : '50%', width : '100%',alignSelf : 'flex-start',justifyContent : 'flex-start'}}
             initialRegion = {{

@@ -55,7 +55,13 @@ const App = () =>{
          <Stack.Screen name="contactuspage"
         component={ContactUsPage}
         options={{
-        }}/>
+          title: 'Contact Us', 
+          headerStyle: {
+            backgroundColor: '#e91b1a',},
+            headerTitleStyle: {color:'white'},
+            headerTintColor: 'white'
+            }} 
+            />
       </Stack.Navigator>
     </NavigationContainer>
   ); 
